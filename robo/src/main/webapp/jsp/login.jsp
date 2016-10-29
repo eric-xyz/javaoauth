@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
  <meta name="google-signin-client_id" content="1067559400677-sjvdp62s7su2a8s0v1j9spuqiup3lvq6.apps.googleusercontent.com">
  <script src="../js/googleLogin.js"></script>
+ <link rel="stylesheet" href="../css/bootstrap.min.css">
  <link rel="stylesheet" href="../css/login.css">
  <%@ include file="header.jsp" %>
  
@@ -10,7 +11,7 @@
   <div class="container-fluid">
       <nav class="navbar navbar-inverse navbar-fixed-top">
        
-            <a class="navbar-brand name" href="#"><strong>GROUP-<span style="color:#4682B4">B1</span></strong></a>
+            <a class="navbar-brand name" href="../index.jsp"><strong>GROUP-<span style="color:#4682B4">B1</span></strong></a>
       </nav>
     <div class="container-fluid">
 

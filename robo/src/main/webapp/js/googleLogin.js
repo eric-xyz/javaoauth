@@ -4,6 +4,7 @@
 
 var email = "";
 var password ="default";
+var test = true;
 
 function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
@@ -18,12 +19,20 @@ function signOut() {
 	if(email === ""){
 		alert("Please Signed In");
 	}else{
-		var redirectMsg = "?" + "username="+email+"&password="+password;
-		var baseUrl = "http://stackoverflow.com"
+		var query = "username="+email+"&password="+password;
+		var redirectMsg = btoa(query);
+		var baseUrl = "";
+		if(test){
+			baseUrl = "http://localhost:8080/robo/test?"
+		}else{
+			baseUrl = "";
+		}
+		
 		var url = baseUrl + redirectMsg;
 	    var auth2 = gapi.auth2.getAuthInstance();
 	    auth2.signOut().then(function () {
 	    	window.location.href = url;
+	    	//console.log("url: " + url);
 	    });
 	}
   }

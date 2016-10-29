@@ -7,11 +7,14 @@ package controller;
 
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+
+import org.apache.commons.codec.binary.Base64;
 
 
 /**
@@ -33,8 +36,17 @@ public class AdminServlet extends HttpServlet {
                 session.invalidate();
             }
             response.sendRedirect("jsp/login.jsp");
-        }else if(userPath.equals("/googleLogin")){
-        	
+        }else if(userPath.equals("/test")){
+        	String encodedMsg = request.getQueryString();
+        	System.out.println(encodedMsg);
+        	byte[] decodedBytes = Base64.decodeBase64(encodedMsg);
+        	String plainMsg = new String(decodedBytes);
+
+        	String[] params = plainMsg.split("&");
+        	String username = params[0].split("=")[1];
+        	String password = params[1].split("=")[1];
+        	System.out.println("username : " + username);
+        	System.out.println("password : " + password);
         }
        
     }

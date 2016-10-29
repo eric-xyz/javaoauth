@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
  <link rel="stylesheet" href="css/index.css">
  <%@ include file="jsp/header.jsp" %>
 
@@ -31,7 +32,7 @@
             <img id="tankpic" src="images/main.png" alt="wops...">        
       </div>
       <div class="row" id="buttonContainer">
-          <a href="/login" class="col-xs-offset-3 col-xs-2 homeGroup">LOGIN</a>
+          <a href="login" class="col-xs-offset-3 col-xs-2 homeGroup">LOGIN</a>
           <a href="" class="col-xs-offset-2 col-xs-2 homeGroup">REGISTER</a>
       </div>
     </div>
@@ -42,30 +43,30 @@
       </div>
       <div class="row">
         <div class="col-xs-5 gamePicContainer">
-          <img src="/images/robo.png" alt="woooooop...robocode pic down" class="img-thumbnail">
+          <img src="images/robo.png" alt="woooooop...robocode pic down" class="img-thumbnail">
         </div>
         <div class="col-xs-6">
           <div class="list-group">
-            <a href="http://robocode.sourceforge.net/" class="list-group-item list-group-item-action">
+            <a href="http://robocode.sourceforge.net/" class="list-group-item list-group-item-action"></a>
               <h5 class="list-group-item-heading">Robocode Main Page</h5>
               <p class="list-group-item-text">The entrance for all robocode info</p>
-            </a>
-            <a href="http://robocode.sourceforge.net/docs/ReadMe.html" class="list-group-item list-group-item-action">
+            
+            <a href="http://robocode.sourceforge.net/docs/ReadMe.html" class="list-group-item list-group-item-action"></a>
               <h5 class="list-group-item-heading">Robocode Readme</h5>
               <p class="list-group-item-text">for Robocode, which gives a good overview of Robocode</p>
-            </a>
-            <a href="http://robowiki.net/wiki/Robocode_Basics" class="list-group-item list-group-item-action">
+            
+            <a href="http://robowiki.net/wiki/Robocode_Basics" class="list-group-item list-group-item-action"></a>
               <h5 class="list-group-item-heading">Getting Started</h5>
               <p class="list-group-item-text">Introduction and tutorials for Robocode on the RoboWiki</p>
-            </a>
-            <a href="http://robocode.sourceforge.net/docs/robocode" class="list-group-item list-group-item-action">
+            
+            <a href="http://robocode.sourceforge.net/docs/robocode" class="list-group-item list-group-item-action"> </a>
               <h5 class="list-group-item-heading">Robocode Java API</h5>
               <p class="list-group-item-text">the Robot API and API for Java applications to control Robocode</p>
-            </a>
-             <a href="http://robowiki.net/wiki/Robocode/Developers_Guide_for_building_Robocode" class="list-group-item list-group-item-action">
+           
+             <a href="http://robowiki.net/wiki/Robocode/Developers_Guide_for_building_Robocode" class="list-group-item list-group-item-action"></a>
               <h5 class="list-group-item-heading">Developer Guide</h5>
               <p class="list-group-item-text">For building Robocode itself using Eclipse</p>
-            </a>
+            
           </div>
         </div>
       </div>
